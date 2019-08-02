@@ -1,0 +1,41 @@
+body {
+    background-image: url("../images/floral-retro-70s.png");
+}
+div.drawcontainer {
+    display: inline-block;
+    width: 950px;
+    position: relative;
+    left: 20px;
+}
+h1 {
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 5em;
+    color: rgb(12, 48, 43);
+    background: rgba(157, 194, 54, 0.5);
+    border: 3px solid rgba(41, 158, 143, .5);
+    border-radius: 1em;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 260px;
+    margin-right: 330px;
+    padding-left: 5px; 
+    text-align: center;
+}
+div.sketchzone {
+    border: 20px solid rgba(14, 37, 34, 0.7);
+    border-radius: 30px;
+    background-color: rgba(81, 87, 86, 0.4);
+    width: 900px;
+    height: 550px;
+    margin: 0 auto;
+    display: grid;
+}
+div.controls {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 500px;
+    border: 3px solid red;
+    margin: 150px 0 50px 10px;
+}
