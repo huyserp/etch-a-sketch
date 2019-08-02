@@ -3,9 +3,11 @@ body {
 }
 div.drawcontainer {
     display: inline-block;
-    width: 950px;
+    min-width: 950px;
+    min-height: 950px;
     position: relative;
-    left: 20px;
+    right: 20px;
+    border: 1px solid red;
 }
 h1 {
     font-family: 'Londrina Sketch', cursive;
@@ -15,7 +17,7 @@ h1 {
     border: 3px solid rgba(41, 158, 143, .5);
     border-radius: 1em;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 260px;
     margin-right: 330px;
@@ -26,16 +28,19 @@ div.sketchzone {
     border: 20px solid rgba(14, 37, 34, 0.7);
     border-radius: 30px;
     background-color: rgba(81, 87, 86, 0.4);
-    width: 900px;
-    height: 550px;
-    margin: 0 auto;
+    min-width: 600px;
+    max-width: 700px;
+    min-height: 600px;
+    max-height: 700px;
+    position: relative;
+    left: 5px;
     display: grid;
 }
 div.controls {
     display: inline-block;
     float: left;
-    width: 350px;
+    width: 200px;
     height: 500px;
     border: 3px solid red;
-    margin: 150px 0 50px 10px;
+    margin: 150px 0 50px 50px;
 }
