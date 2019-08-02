@@ -4,7 +4,6 @@ body {
 div.drawcontainer {
     display: inline-block;
     min-width: 950px;
-    min-height: 950px;
     position: relative;
     right: 20px;
     border: 1px solid red;
@@ -17,10 +16,7 @@ h1 {
     border: 3px solid rgba(41, 158, 143, .5);
     border-radius: 1em;
     font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 260px;
-    margin-right: 330px;
+    margin: 5px 330px 5px 260px;
     padding-left: 5px; 
     text-align: center;
 }
@@ -29,18 +25,16 @@ div.sketchzone {
     border-radius: 30px;
     background-color: rgba(81, 87, 86, 0.4);
     min-width: 600px;
-    max-width: 700px;
     min-height: 600px;
-    max-height: 700px;
     position: relative;
-    left: 5px;
     display: grid;
 }
 div.controls {
     display: inline-block;
     float: left;
-    width: 200px;
+    position: relative;
+    width: 350px;
     height: 500px;
     border: 3px solid red;
-    margin: 150px 0 50px 50px;
+    margin: 150px 25px 50px 50px;
 }
