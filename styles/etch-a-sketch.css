@@ -6,7 +6,6 @@ div.drawcontainer {
     min-width: 950px;
     position: relative;
     right: 20px;
-    border: 1px solid red;
 }
 h1 {
     font-family: 'Londrina Sketch', cursive;
@@ -16,7 +15,7 @@ h1 {
     border: 3px solid rgba(41, 158, 143, .5);
     border-radius: 1em;
     font-weight: 400;
-    margin: 5px 330px 5px 260px;
+    margin: 2px 330px 2px 260px;
     padding-left: 5px; 
     text-align: center;
 }
@@ -38,7 +37,6 @@ div.sketchzone {
 .griditem {
     grid-column-start: auto;
     grid-row-start: auto;
-    background-color: aquamarine;
 }
 
 div.controls {
