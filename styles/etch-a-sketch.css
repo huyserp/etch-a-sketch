@@ -3,16 +3,17 @@ body {
 }
 div.drawcontainer {
     display: inline-block;
-    min-width: 950px;
+    width: 950px;
     position: relative;
     right: 20px;
+
 }
 h1 {
     font-family: 'Londrina Sketch', cursive;
     font-size: 5em;
     color: rgb(12, 48, 43);
     background: rgba(157, 194, 54, 0.5);
-    border: 3px solid rgba(41, 158, 143, .5);
+    border: 3px solid blueviolet;
     border-radius: 1em;
     font-weight: 400;
     margin: 2px 330px 2px 260px;
@@ -28,8 +29,11 @@ div.sketchzone {
     border-radius: 30px;
     background-color: rgba(81, 87, 86, 0.4);
     min-width: 600px;
+    max-width: 600px;
     min-height: 600px;
+    max-height: 600px;
     position: relative;
+    left: 150px;
     display: grid;
     grid-template: repeat(var(--rowNum), 1fr) / repeat(var(--colNum), 1fr);
 }
@@ -43,8 +47,35 @@ div.controls {
     
     float: left;
     position: relative;
-    width: 350px;
+    width: 250px;
     height: 500px;
-    border: 3px solid red;
     margin: 150px 25px 50px 50px;
+}
+.resetbtn {
+    display: inline-block;
+    border: 2px solid blueviolet;
+    border-radius: 3px;
+    width: 155px;
+    height: 50px;
+    font-family: 'Londrina Sketch', cursive;
+    color:  rgb(12, 48, 43);
+    background-color: rgba(157, 194, 54, 0.5);
+    text-align: center;
+    font-size: 3em;
+    position: relative;
+    top: 150px;
+    left: 180px;
+    box-shadow: 0px 5px rgba(14, 37, 34, 0.7);
+}
+.resetbtn:hover {
+    color: rgb(167, 86, 243);
+    background-color: rgba(157, 194, 54, 0.5);
+    box-shadow: 0px 5px rgba(14, 37, 34, 0.7);
+}
+.resetbtn:active {
+    box-shadow: 0px 1px rgba(14, 37, 34, 0.7);
+    transform: translateY(4px);
+}
+.resetbtn:focus{
+    outline: none;
 }
