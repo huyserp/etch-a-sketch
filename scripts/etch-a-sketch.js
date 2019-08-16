@@ -35,15 +35,6 @@ function cleanSlate() {
         sketchPad.removeChild(sketchPad.firstChild);
     }
 }
-/*
-function cleanSlate() {
-    for(let i = 0; i < gridItems.length; i++) {
-        if (gridItems.item(i).style.backgroundColor = "rgba(73, 78, 77, 0.8)"){
-            gridItems.item(i).style.backgroundColor = '';
-        }
-    }
-}
-*/
 
 window.addEventListener('load', () => {createGridDiv(); draw();});
 
