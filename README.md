@@ -1,7 +1,26 @@
-This project was challenging and rewarding.  there was a lot of googling for direction on scripts for both populating and "drawing" on the etch a sketch.
-
-I knew I wanted to use a CSS grid for my sketchzone. to define the grid size by prompt, I used CSS variables (excited about this functionality) to dictate the number of rows and columns in the grid with 1 fr each.  grid-coloumn and grid-row start: auto allowed the grid to fill square at a time in order.  the JS prompt takes the size of the grid, then plugs it into the :root variables --rowNum, --colNum.  then createGridDiv uses the css variables to determine the number of divs to populate the grid with and loops the creating until the right number is reached.  finally the draw function loops through each div on the sketchpad and assigns an event listener to change the background color on a mouseover.
-
-I had a hang-up with resetting the grid - initially I had a button click just take away all the color from the divs, however, when creating a new set, it would just add to the list of divs, instead of replacing and renewing.  so starting with a grid size of 16 would produce 256 divs.  after clicking reset and establishing a grid size of 100, I would have a total of 10256 divs..... this didnt work and only allowed for drawing on the top half of the etch a sketch, as the newly added divs didnt get the command to take drawing.  it also, of course, produced an inaccurate grid size.  I fixed the cleanSlate function to remove all child elements first, before adding the new grid dementions. looping through each successive first child and removing it until their was no longer a child element.
-
-The only bug which still needs fixing is if the prompt does not recieve a value or cancel.  I've written an "if" statement in the function to address this, but it broke functionality down the line and I didnt want to open a new can of worms.... I will address this later. for now time to move on :)
+Follow the instructions atop Odin’s Google Homepage project to setup a git repository for this project.
+Create a webpage with a 16x16 grid of square divs
+Create the divs using JavaScript… don’t try making them by hand with copy and pasting in your html file!
+Best to put your grid squares inside another “container” div (that one can go directly in your html)
+There are several different ways to make the divs appear as a grid (versus just one on each line) feel free to use any or play with each of them:
+float/clear
+inline-block
+flexbox
+CSS Grid
+Be careful with borders and margins, they can adjust the size of the squares!
+“OMG, Why isn’t my grid being created???”
+Open your browser’s developer tools
+Check if there are any errors in the JavaScript console
+Check your “elements” pane to see if the elements have actually shown up but are somehow hidden.
+Go willy-nilly and add console.log statements in your JavaScript to see if it’s actually being loaded.
+Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
+Hint: “hovering” is what happens when your mouse enters a div and ends when your mouse leaves it.. you can set up event listeners for either of those events as a starting point.
+There are multiple ways to change the color of the divs, including:
+adding a new class to the div
+changing the div’s background color using JavaScript.
+Add a button to the top of the screen which will clear the current grid and send the user a popup asking for how many squares per side to make the new grid. Once entered the new grid should be generated in the same total space as before (e.g. 960px wide) and now you’ve got a new sketch pad.
+Research button tags in HTML and how you can make a JavaScript function run when one is clicked.
+Also check out prompts
+You should be able to enter 64 and have a brand new 64x64 grid pop up without changing the total amount of pixels used
+(Optional): Instead of just changing the color of your grid from black to white (for example) have each pass through it with the mouse change to a completely random RGB value. Then try having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
+Push your project to GitHub!
